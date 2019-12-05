@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/photoImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <TextView
+        android:id="@+id/photoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        android:id="@+id/photoProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

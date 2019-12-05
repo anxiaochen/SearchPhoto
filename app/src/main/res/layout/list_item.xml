@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+   <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:maxLength="50"/>
+
+    <!-- description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:textStyle="italic"
+        android:textColor="@color/colorLightGrey"
+        android:maxLength="100"
+     />
+
+    <!-- views -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description">
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:background="@drawable/view" />
+
+    <TextView
+        android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"/>
+    </RelativeLayout>
+
+    <!-- id {hidden value}-->
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+
+        />
+
+
+</RelativeLayout>
